@@ -1,0 +1,7 @@
+- id: check-tf-lock-file-without-zh-entries
+  name: 'Check terraform lock files with "zh:" entries'
+  description: "Ensures terraform lock files (.terraform.lock.hcl) doesn't contain zh: entries"
+  entry: check_tf_lock_file_without_zh_entries
+  language: python
+  files: \.terraform\.lock\.hcl$
+  exclude: \.terraform\/.*$
